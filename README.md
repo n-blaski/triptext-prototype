@@ -1,4 +1,4 @@
-# triptext-prototype
+# TripText Prototype
 Keep your friends and family in the loop while you travel.
 
 ### What is this for?
