@@ -17,3 +17,5 @@ This app syncs with Google Maps to inform selected contacts when you are departi
 4. Press "Go!"
 
 Text messages will automatically be sent to the contacts you chose, informing them of your intended destination and an estimated time of arrival.
+
+[A prototype UI is available here.](https://www.fluidui.com/editor/live/preview/p_K96fZBl5ehT3TWvupcnRaSboUGkRAFFG.1444101399602)
