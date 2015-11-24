@@ -15,6 +15,10 @@
 		0D4BCA1B1BDED4F2006DDFB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4BCA191BDED4F2006DDFB3 /* LaunchScreen.storyboard */; };
 		0D4BCA261BDED4F2006DDFB3 /* TripTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4BCA251BDED4F2006DDFB3 /* TripTextTests.swift */; };
 		0D4BCA311BDED4F2006DDFB3 /* TripTextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4BCA301BDED4F2006DDFB3 /* TripTextUITests.swift */; };
+		0D5A571C1C03EDF50044D315 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A571B1C03EDF50044D315 /* MainMenuViewController.swift */; };
+		0D5A571E1C03EE050044D315 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A571D1C03EE050044D315 /* MapViewController.swift */; };
+		0D5A57201C03EE170044D315 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A571F1C03EE170044D315 /* ConversationViewController.swift */; };
+		0D5A57221C03EE460044D315 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A57211C03EE460044D315 /* ContactsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		0D4BCA2C1BDED4F2006DDFB3 /* TripTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4BCA301BDED4F2006DDFB3 /* TripTextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTextUITests.swift; sourceTree = "<group>"; };
 		0D4BCA321BDED4F2006DDFB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D5A571B1C03EDF50044D315 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		0D5A571D1C03EE050044D315 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0D5A571F1C03EE170044D315 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		0D5A57211C03EE460044D315 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 		0D4BCA011BDED4F1006DDFB3 = {
 			isa = PBXGroup;
 			children = (
+				0D5A571A1C03EDCA0044D315 /* ViewControllers */,
 				0D4BCA0C1BDED4F1006DDFB3 /* TripText */,
 				0D4BCA241BDED4F2006DDFB3 /* TripTextTests */,
 				0D4BCA2F1BDED4F2006DDFB3 /* TripTextUITests */,
@@ -126,6 +135,17 @@
 				0D4BCA321BDED4F2006DDFB3 /* Info.plist */,
 			);
 			path = TripTextUITests;
+			sourceTree = "<group>";
+		};
+		0D5A571A1C03EDCA0044D315 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D5A571B1C03EDF50044D315 /* MainMenuViewController.swift */,
+				0D5A571D1C03EE050044D315 /* MapViewController.swift */,
+				0D5A571F1C03EE170044D315 /* ConversationViewController.swift */,
+				0D5A57211C03EE460044D315 /* ContactsTableViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D5A571C1C03EDF50044D315 /* MainMenuViewController.swift in Sources */,
 				0D4BCA161BDED4F2006DDFB3 /* TripText.xcdatamodeld in Sources */,
+				0D5A57201C03EE170044D315 /* ConversationViewController.swift in Sources */,
 				0D4BCA101BDED4F1006DDFB3 /* ViewController.swift in Sources */,
+				0D5A571E1C03EE050044D315 /* MapViewController.swift in Sources */,
 				0D4BCA0E1BDED4F1006DDFB3 /* AppDelegate.swift in Sources */,
+				0D5A57221C03EE460044D315 /* ContactsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +511,7 @@
 				0D4BCA371BDED4F2006DDFB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D4BCA381BDED4F2006DDFB3 /* Build configuration list for PBXNativeTarget "TripTextTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +520,7 @@
 				0D4BCA3A1BDED4F2006DDFB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D4BCA3B1BDED4F2006DDFB3 /* Build configuration list for PBXNativeTarget "TripTextUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +529,7 @@
 				0D4BCA3D1BDED4F2006DDFB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

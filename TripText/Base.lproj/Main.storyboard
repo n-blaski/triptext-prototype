@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xBi-zx-swc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -18,10 +18,10 @@
             </objects>
             <point key="canvasLocation" x="148" y="-353"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Contacts Table View Controller-->
         <scene sceneID="0Uq-dh-pHv">
             <objects>
-                <tableViewController id="Wyr-MT-FsF" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ContactsViewController" id="Wyr-MT-FsF" customClass="ContactsTableViewController" customModule="TripText" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="DXx-c3-ah3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="888" y="-353"/>
         </scene>
-        <!--View Controller-->
+        <!--Conversation View Controller-->
         <scene sceneID="NaR-XE-1td">
             <objects>
-                <viewController id="FrN-hU-N8m" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConversationViewController" id="FrN-hU-N8m" customClass="ConversationViewController" customModule="TripText" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="puk-ku-dec"/>
                         <viewControllerLayoutGuide type="bottom" id="Obc-K5-HsR"/>
@@ -83,20 +83,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vDz-sk-kWT" firstAttribute="top" secondItem="UuE-GW-AQE" secondAttribute="top" id="CyY-k1-t4t"/>
-                            <constraint firstItem="vDz-sk-kWT" firstAttribute="leading" secondItem="UuE-GW-AQE" secondAttribute="leading" id="EPP-Q3-vpK"/>
-                            <constraint firstAttribute="trailing" secondItem="vDz-sk-kWT" secondAttribute="trailing" id="qXo-Lf-DgB"/>
+                            <constraint firstAttribute="trailing" secondItem="vDz-sk-kWT" secondAttribute="trailing" id="UdF-es-KXu"/>
+                            <constraint firstItem="vDz-sk-kWT" firstAttribute="leading" secondItem="UuE-GW-AQE" secondAttribute="leading" id="aEp-Mw-HC4"/>
+                            <constraint firstItem="vDz-sk-kWT" firstAttribute="top" secondItem="UuE-GW-AQE" secondAttribute="top" id="sS6-2u-qvB"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7eD-Bd-05i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1539" y="-353"/>
+            <point key="canvasLocation" x="-559" y="357"/>
         </scene>
         <!--Title-->
         <scene sceneID="sp6-6f-qkL">
             <objects>
-                <viewController id="xBi-zx-swc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainMenuViewController" id="xBi-zx-swc" customClass="MainMenuViewController" customModule="TripText" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kCT-Y1-gv7"/>
                         <viewControllerLayoutGuide type="bottom" id="q7N-Ro-06D"/>
@@ -111,28 +111,44 @@
                                     <navigationItem title="TripText Prototype" id="S7H-EX-m98"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJL-91-QLg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJL-91-QLg">
                                 <rect key="frame" x="199" y="228" width="202" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="202" id="cyD-ZX-2hd"/>
+                                </constraints>
                                 <state key="normal" title="Plan a Trip"/>
+                                <connections>
+                                    <segue destination="Y0U-DE-Lav" kind="presentation" id="2Mq-d5-ZoM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ql-X2-htx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ql-X2-htx">
                                 <rect key="frame" x="199" y="266" width="202" height="30"/>
                                 <state key="normal" title="Manage Contacts"/>
+                                <connections>
+                                    <segue destination="Wyr-MT-FsF" kind="presentation" id="fnC-3u-WlX"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUh-DR-Wts">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUh-DR-Wts">
                                 <rect key="frame" x="199" y="304" width="202" height="30"/>
                                 <state key="normal" title="Conversations"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHx-sY-110">
-                                <rect key="frame" x="199" y="342" width="202" height="30"/>
-                                <state key="normal" title="Map"/>
+                                <connections>
+                                    <segue destination="FrN-hU-N8m" kind="presentation" id="FXf-fQ-d8P"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3AY-RR-hzX" firstAttribute="leading" secondItem="j9h-HV-818" secondAttribute="leading" id="Umf-0B-egy"/>
-                            <constraint firstItem="3AY-RR-hzX" firstAttribute="top" secondItem="j9h-HV-818" secondAttribute="top" id="Yin-Qy-39N"/>
-                            <constraint firstAttribute="trailing" secondItem="3AY-RR-hzX" secondAttribute="trailing" id="kvL-fT-P6V"/>
+                            <constraint firstItem="3AY-RR-hzX" firstAttribute="top" secondItem="j9h-HV-818" secondAttribute="top" id="1wV-3C-1bN"/>
+                            <constraint firstAttribute="trailing" secondItem="3AY-RR-hzX" secondAttribute="trailing" id="E6v-48-u3Z"/>
+                            <constraint firstItem="q7N-Ro-06D" firstAttribute="top" secondItem="EUh-DR-Wts" secondAttribute="bottom" constant="266" id="JAy-1S-GMs"/>
+                            <constraint firstItem="3AY-RR-hzX" firstAttribute="centerX" secondItem="SJL-91-QLg" secondAttribute="centerX" id="KRN-We-aYU"/>
+                            <constraint firstItem="EUh-DR-Wts" firstAttribute="top" secondItem="9Ql-X2-htx" secondAttribute="bottom" constant="8" symbolic="YES" id="Koz-V6-47p"/>
+                            <constraint firstItem="9Ql-X2-htx" firstAttribute="leading" secondItem="SJL-91-QLg" secondAttribute="leading" id="MsI-Gt-Wwk"/>
+                            <constraint firstItem="3AY-RR-hzX" firstAttribute="leading" secondItem="j9h-HV-818" secondAttribute="leading" id="ZEv-mD-ECv"/>
+                            <constraint firstItem="9Ql-X2-htx" firstAttribute="leading" secondItem="EUh-DR-Wts" secondAttribute="leading" id="dmA-yZ-DLO"/>
+                            <constraint firstItem="9Ql-X2-htx" firstAttribute="trailing" secondItem="EUh-DR-Wts" secondAttribute="trailing" id="teW-9J-Bhr"/>
+                            <constraint firstItem="9Ql-X2-htx" firstAttribute="top" secondItem="SJL-91-QLg" secondAttribute="bottom" constant="8" symbolic="YES" id="ull-aq-OeI"/>
+                            <constraint firstItem="SJL-91-QLg" firstAttribute="trailing" secondItem="9Ql-X2-htx" secondAttribute="trailing" id="x0L-kA-JRD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="Q4P-ET-i9l"/>
@@ -141,10 +157,10 @@
             </objects>
             <point key="canvasLocation" x="148" y="357"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="Jxy-J8-s2z">
             <objects>
-                <viewController id="Y0U-DE-Lav" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="Y0U-DE-Lav" customClass="MapViewController" customModule="TripText" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tk1-oK-qgO"/>
                         <viewControllerLayoutGuide type="bottom" id="uL8-eC-yCo"/>
@@ -165,13 +181,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="w9T-hM-aDc" firstAttribute="bottom" secondItem="uL8-eC-yCo" secondAttribute="top" id="0bb-26-HgG"/>
-                            <constraint firstItem="w9T-hM-aDc" firstAttribute="top" secondItem="CJV-IA-Vz0" secondAttribute="bottom" id="74o-QC-vt9"/>
-                            <constraint firstAttribute="trailing" secondItem="w9T-hM-aDc" secondAttribute="trailing" id="fSs-uF-Rhi"/>
-                            <constraint firstItem="CJV-IA-Vz0" firstAttribute="top" secondItem="sPO-r8-Azp" secondAttribute="topMargin" constant="-5" id="hB1-69-4zE"/>
-                            <constraint firstItem="CJV-IA-Vz0" firstAttribute="leading" secondItem="w9T-hM-aDc" secondAttribute="leading" id="iSb-JC-Bq5"/>
-                            <constraint firstItem="CJV-IA-Vz0" firstAttribute="trailing" secondItem="w9T-hM-aDc" secondAttribute="trailing" id="k9X-4I-75j"/>
-                            <constraint firstItem="w9T-hM-aDc" firstAttribute="leading" secondItem="sPO-r8-Azp" secondAttribute="leading" id="vg2-3M-xY5"/>
+                            <constraint firstItem="w9T-hM-aDc" firstAttribute="leading" secondItem="CJV-IA-Vz0" secondAttribute="leading" id="2Xl-ah-BMn"/>
+                            <constraint firstItem="w9T-hM-aDc" firstAttribute="leading" secondItem="sPO-r8-Azp" secondAttribute="leading" id="ObQ-ao-JZ5"/>
+                            <constraint firstItem="CJV-IA-Vz0" firstAttribute="trailing" secondItem="w9T-hM-aDc" secondAttribute="trailing" id="YqQ-k7-yBA"/>
+                            <constraint firstItem="CJV-IA-Vz0" firstAttribute="top" secondItem="sPO-r8-Azp" secondAttribute="topMargin" constant="-5" id="doo-uV-rHH"/>
+                            <constraint firstItem="w9T-hM-aDc" firstAttribute="bottom" secondItem="uL8-eC-yCo" secondAttribute="top" id="hhx-NB-iHT"/>
+                            <constraint firstAttribute="trailing" secondItem="w9T-hM-aDc" secondAttribute="trailing" id="jYg-ti-pCZ"/>
+                            <constraint firstItem="w9T-hM-aDc" firstAttribute="top" secondItem="CJV-IA-Vz0" secondAttribute="bottom" id="mWC-AJ-7Su"/>
                         </constraints>
                     </view>
                 </viewController>
