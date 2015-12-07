@@ -7,13 +7,21 @@
 //
 
 import UIKit
+import Parse
+import CoreLocation
 
 class MapViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        
+        if #available(iOS 8.0, *) {
+            locationManager.requestWhenInUseAuthorization()
+        } else {
+            locationManager.startUpdatingLocation()
+        }
     }
 
     override func didReceiveMemoryWarning() {

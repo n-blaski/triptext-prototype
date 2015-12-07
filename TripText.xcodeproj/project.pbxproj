@@ -32,6 +32,7 @@
 		0D63E6DC1C0D10DF00D893BB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D63E6D31C0D10DF00D893BB /* StoreKit.framework */; };
 		0D63E6DD1C0D10DF00D893BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D63E6D41C0D10DF00D893BB /* SystemConfiguration.framework */; };
 		0D63E6E01C0D1C5A00D893BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D63E6DF1C0D1C5A00D893BB /* MapKit.framework */; };
+		0DB9BFDD1C15F42D0041A76B /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB9BFDC1C15F42D0041A76B /* images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		0D63E6D31C0D10DF00D893BB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		0D63E6D41C0D10DF00D893BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0D63E6DF1C0D1C5A00D893BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0DB9BFDC1C15F42D0041A76B /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		0D4BCA011BDED4F1006DDFB3 = {
 			isa = PBXGroup;
 			children = (
+				0DB9BFDC1C15F42D0041A76B /* images.xcassets */,
 				0D63E6DE1C0D10E800D893BB /* Frameworks */,
 				0D5A571A1C03EDCA0044D315 /* ViewControllers */,
 				0D4BCA0C1BDED4F1006DDFB3 /* TripText */,
@@ -312,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D4BCA1B1BDED4F2006DDFB3 /* LaunchScreen.storyboard in Resources */,
+				0DB9BFDD1C15F42D0041A76B /* images.xcassets in Resources */,
 				0D4BCA181BDED4F2006DDFB3 /* Assets.xcassets in Resources */,
 				0D4BCA131BDED4F1006DDFB3 /* Main.storyboard in Resources */,
 			);
