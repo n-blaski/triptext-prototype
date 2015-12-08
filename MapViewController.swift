@@ -17,11 +17,11 @@ class MapViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        if #available(iOS 8.0, *) {
-            locationManager.requestWhenInUseAuthorization()
-        } else {
-            locationManager.startUpdatingLocation()
-        }
+//        if #available(iOS 8.0, *) {
+ //           locationManager.requestWhenInUseAuthorization()
+ //       } else {
+ //           locationManager.startUpdatingLocation()
+ //       }
     }
 
     override func didReceiveMemoryWarning() {

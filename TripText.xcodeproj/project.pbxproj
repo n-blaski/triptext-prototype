@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D129B611C163D0500136DA1 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D129B5F1C163D0500136DA1 /* Contact+CoreDataProperties.swift */; };
+		0D129B621C163D0500136DA1 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D129B601C163D0500136DA1 /* Contact.swift */; };
 		0D4BCA0E1BDED4F1006DDFB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4BCA0D1BDED4F1006DDFB3 /* AppDelegate.swift */; };
 		0D4BCA101BDED4F1006DDFB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4BCA0F1BDED4F1006DDFB3 /* ViewController.swift */; };
 		0D4BCA131BDED4F1006DDFB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4BCA111BDED4F1006DDFB3 /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D129B5F1C163D0500136DA1 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0D129B601C163D0500136DA1 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		0D4BCA0A1BDED4F1006DDFB3 /* TripText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4BCA0D1BDED4F1006DDFB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D4BCA0F1BDED4F1006DDFB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,10 +96,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D63E6D71C0D10DF00D893BB /* CoreLocation.framework in Frameworks */,
 				0D63E6E01C0D1C5A00D893BB /* MapKit.framework in Frameworks */,
 				0D63E6D51C0D10DF00D893BB /* CFNetwork.framework in Frameworks */,
 				0D63E6D61C0D10DF00D893BB /* CoreGraphics.framework in Frameworks */,
-				0D63E6D71C0D10DF00D893BB /* CoreLocation.framework in Frameworks */,
 				0D63E6D81C0D10DF00D893BB /* libsqlite3.tbd in Frameworks */,
 				0D63E6D91C0D10DF00D893BB /* libz.tbd in Frameworks */,
 				0D63E6DA1C0D10DF00D893BB /* QuartzCore.framework in Frameworks */,
@@ -183,6 +187,8 @@
 		0D5A571A1C03EDCA0044D315 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0D129B5F1C163D0500136DA1 /* Contact+CoreDataProperties.swift */,
+				0D129B601C163D0500136DA1 /* Contact.swift */,
 				0D5A571B1C03EDF50044D315 /* MainMenuViewController.swift */,
 				0D5A571D1C03EE050044D315 /* MapViewController.swift */,
 				0D5A571F1C03EE170044D315 /* ConversationViewController.swift */,
@@ -278,6 +284,7 @@
 				TargetAttributes = {
 					0D4BCA091BDED4F1006DDFB3 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = LAK6SGQ7Q5;
 					};
 					0D4BCA201BDED4F2006DDFB3 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -343,7 +350,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5A571C1C03EDF50044D315 /* MainMenuViewController.swift in Sources */,
+				0D129B621C163D0500136DA1 /* Contact.swift in Sources */,
 				0D4BCA161BDED4F2006DDFB3 /* TripText.xcdatamodeld in Sources */,
+				0D129B611C163D0500136DA1 /* Contact+CoreDataProperties.swift in Sources */,
 				0D5A57201C03EE170044D315 /* ConversationViewController.swift in Sources */,
 				0D4BCA101BDED4F1006DDFB3 /* ViewController.swift in Sources */,
 				0D5A571E1C03EE050044D315 /* MapViewController.swift in Sources */,
@@ -490,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -505,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
